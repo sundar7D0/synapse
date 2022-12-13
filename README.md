@@ -8,8 +8,8 @@ Systolic arrays are one of the most popular compute substrates within DL acceler
 5. Compiler optimizations
 
 ![systolic block diagram](./images/systolic_block.png)
-![synapse overview](./images/synapse_overview.png)
-![synapse task flow](./images/synapse_task_flow.png)
+![synapse overview](./images/synapse_overview.PNG)
+![synapse task flow](./images/synapse_task_flow.PNG)
 
 To tackle the challenges, I built Synapse (SYstolic CNN Accelerator’s MaPper-Simulator Environment): a versatile python based mapper-simulator environment.
 
