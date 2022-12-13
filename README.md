@@ -11,7 +11,7 @@ Systolic arrays are one of the most popular compute substrates within DL acceler
 ![synapse overview](./images/synapse_overview.PNG)
 ![synapse task flow](./images/synapse_task_flow.PNG)
 
-To tackle the challenges, I built Synapse (SYstolic CNN Accelerator’s MaPper-Simulator Environment): a versatile python based mapper-simulator environment.
+To tackle the challenges, I built Synapse (SYstolic CNN Accelerator’s MaPper-Simulator Environment): a versatile python based mapper-simulator environment. This work, done under the guidance of [Prof. Pratyush Kumar](http://www.cse.iitm.ac.in/~pratyush/) was submitted as my Bachelor's thesis at [IIT Madras](https://www.iitm.ac.in/).
 
 ## Key Contributions:
 * Mapper that generates instruction trace given any workload, knob values for a targeted architecture.
