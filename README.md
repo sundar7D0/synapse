@@ -22,27 +22,25 @@ To tackle these challenges, I built Synapse (SYstolic CNN Accelerator’s MaPper
 ![synapse task flow](./images/synapse_task_flow.PNG)
 
 ## Dependencies
-1. [Installing Bluespec](https://github.com/B-Lang-org/bsc)
-2. [Installing verilator](https://www.veripool.org/verilator/)
+1. [Installing DRAMSim2](https://github.com/umd-memsys/DRAMSim2)
+2. [Installing SWIG](https://www.swig.org/)
+3. OpenAI Gym 0.7+
+4. PyTorch 1.11+
 
-## Using SHAKTIMAAN
+## Using Synapse
 
-### Software compilation
+### Mapper
 In the first step, instructions for SHAKTIMAAN are generated using a separate compilation process. More details to follow.  Instructions are compiled and stored in RAM, which is loaded when the testbench is initiated directly from `code.mem`. More to follow.
 
-### Configuration
+### Simulator
 A testbench is available in `src/Soc.bsv` which instantiates the accelerator and runs a single trace of instructions.
 All configurations can be changed adhering to the provisos required for compilation of Bluespec files and can be changed in `src/Soc.bsv`.
 Non configurable parameters, such as ISA definitions, are defined in `src/commons/systolic.defines`.
 
-### Verilog generation
+### Reinforcement Learning Agent
 1. `cd src`
 2. `make generate_verilog` - generates Verilog files from Bluespec for all files.
 
-### Simulation
-1. `cd src`
-2. `make generate_verilog`
-3. `make link_verilator` - generates a binary `bin/out` which simulates the array.
 
 ## Additional resources
 1. [Bachelor's thesis](https://drive.google.com/file/d/1PMTwZhSbaysdSdLks98JykyDDe_itRQa/view?usp=sharing)
