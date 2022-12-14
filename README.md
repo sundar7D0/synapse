@@ -1,22 +1,25 @@
 # Synapse: Systolic CNN Accelerator’s Mapper-Simulator Environment
-Systolic arrays are one of the most popular compute substrates within DL accelerators today, as they provide extremely high efficiency for running dense matrix multiplications by re-using operands through local data shifts. One such effort by [RISE lab](https://shakti.org.in/) is [ShaktiMAAN](https://github.com/iitm-sysdl/SHAKTIMAAN), an open-source DNN accelerator for inference on edge devices based on systolic arrays. The complexity of this accelerator poses a variety of challenges in:
+Systolic arrays are one of the most popular compute substrates within DL accelerators today, as they provide extremely high efficiency for running dense matrix multiplications by re-using operands through local data shifts. One such effort by [RISE lab](https://shakti.org.in/) at IIT Madras is [ShaktiMAAN](https://github.com/iitm-sysdl/SHAKTIMAAN), an open-source DNN accelerator for inference on edge devices based on systolic arrays.
 
+![systolic block diagram](./images/systolic_block.png)
+
+The complexity of this accelerator poses a variety of challenges in:
 1. Hardware verification
 2. Bottleneck analysis using performance modelling
 3. Design space trade-offs
 4. Efficient mapping strategy
 5. Compiler optimizations
 
-![systolic block diagram](./images/systolic_block.png)
-![synapse overview](./images/synapse_overview.PNG)
-![synapse task flow](./images/synapse_task_flow.PNG)
+To tackle these challenges, I built Synapse (SYstolic CNN Accelerator’s MaPper-Simulator Environment): a versatile python based mapper-simulator environment. This work, done under the guidance of [Prof. Pratyush Kumar](http://www.cse.iitm.ac.in/~pratyush/) was submitted as my Bachelor's thesis at [IIT Madras](https://www.iitm.ac.in/).
 
-To tackle the challenges, I built Synapse (SYstolic CNN Accelerator’s MaPper-Simulator Environment): a versatile python based mapper-simulator environment. This work, done under the guidance of [Prof. Pratyush Kumar](http://www.cse.iitm.ac.in/~pratyush/) was submitted as my Bachelor's thesis at [IIT Madras](https://www.iitm.ac.in/).
+![synapse overview](./images/synapse_overview.PNG)
 
 ## Key Contributions:
 * Mapper that generates instruction trace given any workload, knob values for a targeted architecture.
 * Functional simulator cost model for ShaktiMAAN.
-* A RL agent that interacts with the mapper-simulator environment to search through the design space to find optimal hardware (array, buffer size), software (network folds, loop order) co-design knobs.
+* An RL agent that interacts with the mapper-simulator environment to search through the design space to find optimal hardware (array, buffer size), software (network folds, loop order) co-design knobs.
+
+![synapse task flow](./images/synapse_task_flow.PNG)
 
 ## Dependencies
 1. [Installing Bluespec](https://github.com/B-Lang-org/bsc)
@@ -44,4 +47,3 @@ Non configurable parameters, such as ISA definitions, are defined in `src/common
 ## Additional resources
 1. [Bachelor's thesis](https://drive.google.com/file/d/1PMTwZhSbaysdSdLks98JykyDDe_itRQa/view?usp=sharing)
 2. [Presentation slides](https://drive.google.com/file/d/1NnDDXgM6h1zbRrv5gJUAIdI9pAYBtN9T/view?usp=sharing)
-
