@@ -10,7 +10,7 @@ The complexity of this accelerator poses a variety of challenges in:
 4. Efficient mapping strategy
 5. Compiler optimizations
 
-To tackle these challenges, I built Synapse (SYstolic CNN Accelerator’s MaPper-Simulator Environment): a versatile python based mapper-simulator environment. This work, done under the guidance of [Prof. Pratyush Kumar](http://www.cse.iitm.ac.in/~pratyush/) was submitted as my Bachelor's thesis at [IIT Madras](https://www.iitm.ac.in/).
+To tackle these challenges, I built Synapse (SYstolic CNN Accelerator’s MaPper-Simulator Environment): a versatile python based mapper-simulator environment. This work, done under the guidance of [Prof. Pratyush Kumar](http://www.cse.iitm.ac.in/~pratyush/), was submitted as my Bachelor's thesis at [IIT Madras](https://www.iitm.ac.in/).
 
 ![synapse overview](./images/synapse_overview.PNG)
 
