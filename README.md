@@ -1,5 +1,5 @@
 # Synapse: Systolic CNN Accelerator’s Mapper-Simulator Environment
-Systolic arrays are one of the most popular compute substrates within DL accelerators today, as they provide extremely high efficiency for running dense matrix multiplications by re-using operands through **local data shifts**. One such effort by [RISE lab](https://shakti.org.in/) at IIT Madras is [ShaktiMAAN](https://github.com/iitm-sysdl/SHAKTIMAAN), an open-source DNN accelerator for inference on edge devices based on systolic arrays.
+Systolic arrays are one of the most popular compute substrates within DL accelerators today, as they provide extremely high efficiency for running dense matrix multiplications by re-using operands through **local data shifts**. One such effort by [RISE lab](https://shakti.org.in/) at IIT Madras is [ShaktiMAAN](https://github.com/iitm-sysdl/SHAKTIMAAN), an open-source DNN accelerator for **inference on edge devices** based on systolic arrays.
 
 ![systolic block diagram](./images/systolic_block.png)
 
@@ -10,7 +10,7 @@ The complexity of this accelerator poses a variety of challenges in:
 4. Efficient mapping strategy
 5. Compiler optimizations
 
-To tackle these challenges, I built Synapse (SYstolic CNN Accelerator’s MaPper-Simulator Environment): a versatile python based mapper-simulator environment. This work, done under the guidance of [Prof. Pratyush Kumar](http://www.cse.iitm.ac.in/~pratyush/), was submitted as my Bachelor's thesis at [IIT Madras](https://www.iitm.ac.in/).
+To tackle these challenges, I built **Synapse** (SYstolic CNN Accelerator’s MaPper-Simulator Environment): a versatile python based mapper-simulator environment. This work, done under the guidance of [Prof. Pratyush Kumar](http://www.cse.iitm.ac.in/~pratyush/), was submitted as my Bachelor's thesis at [IIT Madras](https://www.iitm.ac.in/).
 
 ![synapse overview](./images/synapse_overview.PNG)
 
